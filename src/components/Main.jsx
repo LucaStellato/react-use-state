@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Button from './Button.jsx';
+import Accordion from './Accordion.jsx';
 export const languages = [
     {
         id: 1,
