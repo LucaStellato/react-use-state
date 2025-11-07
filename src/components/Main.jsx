@@ -40,13 +40,9 @@ export default function Main() {
     return (
         <>  <div className=' d-flex flex-column align-items-center'>
 
-            <Button />
+            <Button setLangId={setLangId} />
+            <Accordion langId={langId} />
 
-
-            <div className='accordion border border-2 mt-4'>
-                <h3>{languages.find(lang => lang.id === langId)?.title}</h3>
-                <p>{languages.find(lang => lang.id === langId)?.description}</p>
-            </div>
         </div>
         </>
 
