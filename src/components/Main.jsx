@@ -35,7 +35,7 @@ export default function Main() {
     const [langId, setLangId] = useState(null)
 
     return (
-        <>
+        <>  <div className=' d-flex flex-column align-items-center'>
             <div>
                 {languages.map((lang) => (
                     <button key={lang.id} className='btn btn-primary me-2' onClick={() => setLangId(lang.id)}>{lang.title}</button>
@@ -46,6 +46,7 @@ export default function Main() {
                 <h3>{languages.find(lang => lang.id === langId)?.title}</h3>
                 <p>{languages.find(lang => lang.id === langId)?.description}</p>
             </div>
+        </div>
         </>
 
     )
