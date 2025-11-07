@@ -36,7 +36,11 @@ export default function Main() {
 
     return (
         <>
-
+            <div>
+                {languages.map((lang) => (
+                    <button key={lang.id} className='btn btn-primary me-2'>{lang.title}</button>
+                ))}
+            </div>
         </>
 
     )
