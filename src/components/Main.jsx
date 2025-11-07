@@ -44,6 +44,7 @@ export default function Main() {
 
             <div className='accordion'>
                 <h3>{languages.find(lang => lang.id === langId)?.title}</h3>
+                <p>{languages.find(lang => lang.id === langId)?.description}</p>
             </div>
         </>
 
