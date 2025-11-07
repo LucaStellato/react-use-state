@@ -41,6 +41,10 @@ export default function Main() {
                     <button key={lang.id} className='btn btn-primary me-2' onClick={() => setLangId(lang.id)}>{lang.title}</button>
                 ))}
             </div>
+
+            <div className='accordion'>
+
+            </div>
         </>
 
     )
